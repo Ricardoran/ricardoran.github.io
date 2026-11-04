@@ -42,6 +42,7 @@ Experience → Education → Toolbox.
 | Change the monogram | the `<div class="monogram">HZ</div>` text |
 | Add a résumé | drop the PDF at `assets/resume.pdf`, then restore the commented `<li>` in `.social` |
 | Add analytics | one `<script>` before `</body>` |
+| Change social preview image | replace `assets/og.png` (1200×630) |
 
 ## Local preview
 
@@ -59,6 +60,25 @@ Any push to `main` goes live in about a minute:
 ```bash
 git add -A && git commit -m "Update content" && git push
 ```
+
+## Custom domain (optional, the only paid part)
+
+Domain registration costs money — a `.com` is about **$10.5–11.2 / year** at
+[Cloudflare Registrar](https://www.cloudflare.com/products/registrar/) (at-cost, same price on renewal).
+GitHub Pages itself and its automatic HTTPS are free; only the domain is paid.
+
+To move from `ricardoran.github.io` to e.g. `haoranzhang.com`:
+
+1. Buy the domain, then in its DNS add `A` records for the apex
+   (185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153)
+   and a `CNAME` for `www` → `ricardoran.github.io`.
+2. In the repo: Settings → Pages → Custom domain → enter the domain (this writes a `CNAME` file).
+3. Tick **Enforce HTTPS** once the certificate is issued (usually a few minutes).
+4. Update the absolute URLs in `index.html`: `og:url`, `og:image`, `twitter:image` and the JSON-LD `url`.
+
+Free alternative: a subdomain from a service like [is-a.dev](https://github.com/is-a-dev) — no cost,
+but it lives on someone else's domain and can disappear if that project stops.
+
 
 ---
 
