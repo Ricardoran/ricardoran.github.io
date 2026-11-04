@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en" data-lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Haoran Zhang — AI Engineer</title>
+<meta name="description" content="Haoran Zhang is an AI engineer building agent runtimes, inference infrastructure and 0→1 products at Sylph AI and previously Meta.">
+<meta property="og:title" content="Haoran Zhang — AI Engineer">
+<meta property="og:description" content="AI engineer building agent runtimes, inference infrastructure and 0→1 products.">
+<meta property="og:type" content="website">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script>
+  (function () {
+    var root = document.documentElement;
+    var theme = localStorage.getItem('theme');
+    if (!theme) {
+      theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    root.dataset.theme = theme;
+
+    var lang = localStorage.getItem('lang');
+    if (lang !== 'en' && lang !== 'zh') {
+      lang = (navigator.language || 'en').toLowerCase().indexOf('zh') === 0 ? 'zh' : 'en';
+    }
+    root.dataset.lang = lang;
+    root.lang = lang === 'zh' ? 'zh-CN' : 'en';
+  })();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Haoran Zhang",
+  "alternateName": "张浩然",
+  "jobTitle": "AI Engineer",
+  "email": "mailto:ricardo15222024@gmail.com",
+  "url": "https://ricardoran.github.io/",
+  "sameAs": [
+    "https://github.com/Ricardoran",
+    "https://www.linkedin.com/in/haoran-zhang-15222024/",
+    "https://x.com/five_zhan25"
+  ],
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "University of Southern California" },
+    { "@type": "CollegeOrUniversity", "name": "Beijing Jiaotong University" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#main"><span class="en">Skip to content</span><span class="zh">跳到正文</span></a>
+
+<div class="controls">
+  <div class="lang-switch" role="group" aria-label="Language">
+    <button type="button" data-lang-btn="en">EN</button>
+    <button type="button" data-lang-btn="zh">中文</button>
+  </div>
+  <button type="button" class="icon-btn" id="themeToggle" aria-label="Toggle color theme">
+    <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.4 4.4l1.6 1.6M18 18l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.4 19.6l1.6-1.6M18 6l1.6-1.6"/></svg>
+    <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.6 8.6 0 1 1 9.8 3.5a6.9 6.9 0 0 0 10.7 10.7z"/></svg>
+  </button>
+</div>
+
+<div class="layout">
+
+  <aside class="sidebar">
+    <div class="monogram" aria-hidden="true">HZ</div>
+    <h1><span class="en">Haoran Zhang</span><span class="zh">张浩然</span></h1>
+    <p class="role">
+      <span class="en">AI Engineer · Agent Systems &amp; Infrastructure</span>
+      <span class="zh">AI 工程师 · Agent 系统与基础设施</span>
+    </p>
+    <p class="blurb">
+      <span class="en">Five years building AI product and infrastructure — from 0→1 agent runtimes at Sylph AI to ads systems at Meta.</span>
+      <span class="zh">五年 AI 产品与基础设施经验——从 Sylph AI 的 0→1 agent runtime，到 Meta 的广告系统。</span>
+    </p>
+
+    <ul class="facts">
+      <li>
+        <span class="k"><span class="en">Based in</span><span class="zh">所在地</span></span>
+        <span class="v"><span class="en">San Francisco, CA</span><span class="zh">旧金山湾区</span></span>
+      </li>
+      <li>
+        <span class="k"><span class="en">Currently</span><span class="zh">当前</span></span>
+        <span class="v v-live"><span class="en">Founding Engineer, Sylph AI</span><span class="zh">创始工程师 @ Sylph AI</span></span>
+      </li>
+      <li>
+        <span class="k">Email</span>
+        <a class="v" href="mailto:ricardo15222024@gmail.com">ricardo15222024@gmail.com</a>
+      </li>
+    </ul>
+
+    <ul class="social">
+      <li><a href="https://github.com/Ricardoran">GitHub <span aria-hidden="true">↗</span></a></li>
+      <li><a href="https://www.linkedin.com/in/haoran-zhang-15222024/">LinkedIn <span aria-hidden="true">↗</span></a></li>
+      <li><a href="https://x.com/five_zhan25">X <span aria-hidden="true">↗</span></a></li>
+      <!-- To publish a résumé: put the PDF at assets/resume.pdf, then restore this row:
+      <li><a href="assets/resume.pdf"><span class="en">Résumé (PDF)</span><span class="zh">简历 (PDF)</span> <span aria-hidden="true">↗</span></a></li>
+      -->
+    </ul>
+
+    <p class="colophon">© 2026 Haoran Zhang</p>
+  </aside>
+
+  <main class="content" id="main">
+
+    <section>
+      <h2><span class="en">About</span><span class="zh">关于</span></h2>
+      <p class="lead">
+        <span class="en">I build AI systems that hold up under real load: agent runtimes, inference infrastructure, and products people actually use.</span>
+        <span class="zh">我做的是能在真实负载下扛住的 AI 系统：agent runtime、推理基础设施，以及真的有人用的产品。</span>
+      </p>
+      <p>
+        <span class="en">An AI/software engineer with five years of experience across Meta and early-stage startups — 0→1 product development, ads systems, and agent infrastructure. Today I&rsquo;m a founding engineer at Sylph AI, working on AdaL, a self-evolving coding agent that spans terminal, web and cloud.</span>
+        <span class="zh">五年经验的 AI/软件工程师，在 Meta 与早期创业公司做过 0→1 产品、广告系统与 agent 基础设施。目前在 Sylph AI 做创始工程师，负责 AdaL——一个覆盖终端、Web 与云端的自进化编程 agent。</span>
+      </p>
+    </section>
+
+    <section>
+      <h2><span class="en">Selected Work</span><span class="zh">精选项目</span></h2>
+      <div class="cards">
+
+        <article class="card">
+          <header>
+            <h3><span class="en">AdaL — self-evolving coding agent</span><span class="zh">AdaL — 自进化编程 Agent</span></h3>
+            <span class="year">2026</span>
+          </header>
+          <p>
+            <span class="en">Founding engineer on a 0→1 agent across terminal, web and cloud. Core runtime and harness reaching SOTA on SWE-bench and Terminal-Bench 2.0.</span>
+            <span class="zh">从 0 到 1 打造的编程 agent，覆盖终端、Web 与云端；核心 runtime 与 harness 在 SWE-bench、Terminal-Bench 2.0 上达到 SOTA。</span>
+          </p>
+          <ul class="tags"><li>TypeScript</li><li>Agent runtime</li><li>SDK</li></ul>
+          <p class="card-links">
+            <a href="https://cloud.adal.sylph.ai/">Product ↗</a>
+            <a href="https://github.com/SylphAI-Inc/adal-sdk">SDK ↗</a>
+          </p>
+        </article>
+
+        <article class="card">
+          <header>
+            <h3><span class="en">LLM proxy &amp; inference infra</span><span class="zh">LLM Proxy 与推理基础设施</span></h3>
+            <span class="year">2026</span>
+          </header>
+          <p>
+            <span class="en">Model-agnostic inference layer: prompt and tool-output caching, custom tool-call protocols, sub-agent workflows, plus billing and rate limiting across 40+ frontier models.</span>
+            <span class="zh">模型无关的推理层：prompt 与工具输出缓存、自定义 tool-call 协议、子 agent 工作流，以及覆盖 40+ 前沿模型的计费与限流。</span>
+          </p>
+          <ul class="tags"><li>Inference</li><li>Infra</li><li>Billing</li></ul>
+          <p class="card-links">
+            <a href="https://docs.sylph.ai/">Docs ↗</a>
+          </p>
+        </article>
+
+        <article class="card">
+          <header>
+            <h3><span class="en">The Last Harness You&rsquo;ll Ever Build</span><span class="zh">The Last Harness You&rsquo;ll Ever Build</span></h3>
+            <span class="year">2026</span>
+          </header>
+          <p>
+            <span class="en">Co-authored work introducing a self-evolving harness architecture for coding agents.</span>
+            <span class="zh">共同提出的自进化 harness 架构，用于编程 agent。</span>
+          </p>
+          <ul class="tags"><li>Paper</li><li>Agents</li></ul>
+          <p class="card-links">
+            <a href="https://arxiv.org/pdf/2604.21003">arXiv ↗</a>
+          </p>
+        </article>
+
+        <article class="card">
+          <header>
+            <h3><span class="en">GazeTrack — iOS AR gaze tracking</span><span class="zh">GazeTrack — iOS AR 视线追踪</span></h3>
+            <span class="year">2025</span>
+          </header>
+          <p>
+            <span class="en">Co-founder. Real-time gaze tracking on iPhone with ARKit and RealityKit — the first low-cost, high-accuracy solution of its kind.</span>
+            <span class="zh">联合创始人。基于 ARKit 与 RealityKit 在 iPhone 上实现实时视线追踪——同类方案中第一个低成本、高精度的产品。</span>
+          </p>
+          <ul class="tags"><li>iOS</li><li>ARKit</li><li>RealityKit</li></ul>
+          <p class="card-links">
+            <a href="https://youtu.be/wiNvG-dHyp0">Demo ↗</a>
+            <a href="https://testflight.apple.com/join/NhKB9CK7">TestFlight ↗</a>
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <section>
+      <h2><span class="en">Experience</span><span class="zh">工作经历</span></h2>
+      <ul class="timeline">
+        <li>
+          <div class="t-head">
+            <h3><span class="en">Founding Engineer · Sylph AI</span><span class="zh">创始工程师 · Sylph AI</span></h3>
+            <span class="year">2026 — Now</span>
+          </div>
+          <p>
+            <span class="en">Agent runtime, harness and inference infrastructure for AdaL. Built evaluation pipelines, staging and e2e testing that raised release velocity.</span>
+            <span class="zh">负责 AdaL 的 agent runtime、harness 与推理基础设施；搭建评测、staging 与 e2e 流程，显著提升迭代与发布效率。</span>
+          </p>
+        </li>
+        <li>
+          <div class="t-head">
+            <h3><span class="en">Co-Founder · Stealth startup (GazeTrack)</span><span class="zh">联合创始人 · 隐身创业项目（GazeTrack）</span></h3>
+            <span class="year">2025</span>
+          </div>
+          <p>
+            <span class="en">Shipped an iOS product for real-time AR gaze tracking, from prototype to the App Store.</span>
+            <span class="zh">从原型到 App Store，交付实时 AR 视线追踪的 iOS 产品。</span>
+          </p>
+        </li>
+        <li>
+          <div class="t-head">
+            <h3><span class="en">Software Engineer · Meta</span><span class="zh">软件工程师 · Meta</span></h3>
+            <span class="year">2022 — 2025</span>
+          </div>
+          <p>
+            <span class="en">Led Shop Ads ($2B ARR) and Click-to-WhatsApp messaging ads ($3B ARR); shipped multi-number support for 2M+ advertisers.</span>
+            <span class="zh">负责 Shop Ads（$2B ARR）与 Click-to-WhatsApp 消息广告（$3B ARR）；为 200 万+ 广告主上线多 WhatsApp 号码能力。</span>
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="en">Education</span><span class="zh">教育</span></h2>
+      <ul class="edu">
+        <li>
+          <span class="edu-main">
+            <span class="school"><span class="en">University of Southern California</span><span class="zh">南加州大学</span></span>
+            <span class="degree"><span class="en">M.S. Computer Science</span><span class="zh">计算机科学硕士</span></span>
+          </span>
+          <span class="year">2021</span>
+        </li>
+        <li>
+          <span class="edu-main">
+            <span class="school"><span class="en">Beijing Jiaotong University</span><span class="zh">北京交通大学</span></span>
+            <span class="degree"><span class="en">B.E. Mechatronics Engineering</span><span class="zh">机械电子工程学士</span></span>
+          </span>
+          <span class="year">2019</span>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="en">Toolbox</span><span class="zh">技术栈</span></h2>
+      <ul class="chips">
+        <li>TypeScript</li><li>Python</li><li>React</li><li>Node.js</li><li>SQL</li>
+        <li>AWS</li><li>Docker</li><li>AI Agents</li><li>iOS</li><li>Web</li>
+      </ul>
+    </section>
+
+  </main>
+</div>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+
+    function applyLang(lang) {
+      root.dataset.lang = lang;
+      root.lang = lang === 'zh' ? 'zh-CN' : 'en';
+      localStorage.setItem('lang', lang);
+      document.querySelectorAll('[data-lang-btn]').forEach(function (btn) {
+        btn.setAttribute('aria-pressed', String(btn.dataset.langBtn === lang));
+      });
+      var title = lang === 'zh' ? '张浩然 — AI 工程师' : 'Haoran Zhang — AI Engineer';
+      document.title = title;
+    }
+
+    applyLang(root.dataset.lang || 'en');
+
+    document.querySelectorAll('[data-lang-btn]').forEach(function (btn) {
+      btn.addEventListener('click', function () { applyLang(btn.dataset.langBtn); });
+    });
+
+    document.getElementById('themeToggle').addEventListener('click', function () {
+      var next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+      root.dataset.theme = next;
+      localStorage.setItem('theme', next);
+    });
+  })();
+</script>
+
+</body>
+</html>
