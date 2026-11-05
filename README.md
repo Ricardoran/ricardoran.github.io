@@ -12,7 +12,9 @@ Live at: **https://ricardoran.github.io**
 ├── index.html      all page content (bilingual: every string exists twice, .en and .zh)
 ├── style.css       all styling; design tokens at the top in :root
 ├── assets/
-│   └── favicon.svg
+│   ├── favicon.svg
+│   ├── og.png         1200x630 social preview card
+│   └── resume.pdf     linked from the sidebar (public download)
 ├── .nojekyll       tells GitHub Pages to serve files as-is (no Jekyll processing)
 └── README.md
 ```
@@ -40,7 +42,7 @@ Experience → Education → Toolbox.
 | Add a project card | copy one `<article class="card">` inside `.cards`, keep the `<header>` + `<p>` + `.tags` structure |
 | Change the accent color | `--accent` / `--accent-soft` in `:root` (and the `[data-theme="dark"]` block) |
 | Change the monogram | the `<div class="monogram">HZ</div>` text |
-| Add a résumé | drop the PDF at `assets/resume.pdf`, then restore the commented `<li>` in `.social` |
+| Replace the résumé PDF | overwrite `assets/resume.pdf` — it is served publicly, so keep that in mind |
 | Add analytics | one `<script>` before `</body>` |
 | Change social preview image | replace `assets/og.png` (1200×630) |
 
@@ -89,4 +91,4 @@ but it lives on someone else's domain and can disappear if that project stops.
 - 颜色在 `style.css` 顶部的 `:root` 里（`--accent` 是主题色），深色模式在 `[data-theme="dark"]` 里。
 - 本地预览：`python3 -m http.server 8000`，然后打开 `http://localhost:8000`。
 - 发布：`git push` 推 `main` 分支即可，GitHub Pages 会自动更新。
-- 简历 PDF 还没放：把文件命名成 `assets/resume.pdf` 放进去，再把 `.social` 里被注释掉的那行 `<li>` 恢复，就会出现"简历 (PDF)"链接（注意这个 PDF 会公开可下载）。
+- 简历已挂在侧边栏，指向 `assets/resume.pdf`；换版本直接覆盖同名文件即可（这个 PDF 是公开可下载的，换之前注意里面的手机号等信息）。
