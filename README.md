@@ -38,7 +38,7 @@ Experience → Education → Toolbox.
 
 | Want to… | Do this |
 | --- | --- |
-| Change name / role / blurb | sidebar block at the top of `<body>` |
+| Change name / role | sidebar block at the top of `<body>` |
 | Add a project card | copy one `<article class="card">` inside `.cards`, keep the `<header>` + `<p>` + `.tags` structure |
 | Change the accent color | `--accent` / `--accent-soft` in `:root` (and the `[data-theme="dark"]` block) |
 | Change the monogram | the `<div class="monogram">HZ</div>` text |
